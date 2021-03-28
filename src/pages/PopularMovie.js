@@ -54,5 +54,6 @@ const MoviesBoxes = styled(motion.div)`
 const Title = styled(motion.h1)`
   font-size: 2rem;
   text-align: center;
+  padding: 1rem 0rem;
 `;
 export default PopularMovies;

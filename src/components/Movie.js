@@ -17,11 +17,12 @@ const Movie = ({movie}) => {
     return (   
         <>
             <MovieBox>
-                <Rating>{movie.vote_average}</Rating>
+               <Circle> 
+                   <Rating>{movie.vote_average}</Rating>
+                </Circle>
                 <Title>{movie.title}</Title>
                 <img src={movieImage} alt=""/>
-                <p>{movie.overview}</p>
-                {console.log(movieImage)}
+                <Descritption>{movie.overview}</Descritption>
             </MovieBox>
         </>
      );
@@ -33,18 +34,36 @@ const MovieBox = styled(motion.div)`
     position: relative;
     width: 500px;
     margin: .5rem;
-    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    background-color: #e3e3e3;
 `;
 
 const Title = styled(motion.h1)`
     text-align: center;
     font-size: 1.4rem;
+    padding: 1rem;
 `;
 
 const Rating = styled(motion.p)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+`;
+
+const Circle = styled(motion.div)`
     position: absolute;
-    right: .2rem;
-    top: -.9rem;
+    right: 0rem;
+    top: 0rem;
+    padding: .5rem;
+    width: 45px;
+    border-radius: 50%;
+    border: 3px solid lime;
+`;
+
+const Descritption = styled(motion.p)`
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
 `;
  
 export default Movie;

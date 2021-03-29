@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import {motion} from 'framer-motion';
+
 
 const Nav = () => {
     return (
@@ -13,7 +13,7 @@ const Nav = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="">
+                        <Link to="/popularfilms">
                             Popular Films
                         </Link>
                     </li>
@@ -26,6 +26,10 @@ const StyledNav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
     width: 100%;
     height: 100%;
     padding: 1rem 0rem;

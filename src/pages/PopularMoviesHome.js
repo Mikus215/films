@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import {motion} from 'framer-motion';
 
 
-function PopularMovies() {
+function PopularMoviesHome() {
 
   // get movies
 const [movies,setMovies] = useState([])
@@ -55,5 +55,8 @@ const Title = styled(motion.h1)`
   font-size: 2rem;
   text-align: center;
   padding: 1rem 0rem;
+  @media(max-width: 560px){
+        font-size: 1.4rem;
+    }
 `;
-export default PopularMovies;
+export default PopularMoviesHome;

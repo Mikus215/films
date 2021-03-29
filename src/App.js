@@ -1,8 +1,9 @@
 import React from 'react';
-import PopularMovie from './pages/PopularMovie';
+import PopularMoviesHome from './pages/PopularMoviesHome';
 import GlobalStyle from './components/GlobalStyle'
 import { Switch, Route  } from 'react-router-dom';
 import Nav from './components/Nav';
+import PopularFilms from './pages/PopularFilms';
 
 function App() {
 
@@ -11,8 +12,11 @@ function App() {
       <GlobalStyle />
       <Nav />
       <Switch>
-        <Route>
-          <PopularMovie path="/" exact/>
+        <Route path="/" exact>
+          <PopularMoviesHome/>
+        </Route>
+        <Route path="/popularfilms" >
+          <PopularFilms path="/" exact />
         </Route>
       </Switch>
       </>

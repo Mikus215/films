@@ -73,15 +73,20 @@ const Title = styled(motion.h1)`
 `;
 
 const Search = styled.div`
-    margin-left: 9%;
+    display: flex;
+    justify-content: center;
     button{
         background: none;
         border: 2px solid black;
         padding: .48rem;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: .3rem;
     }
     input{
         padding: .3rem;
         font-size: 1.1rem;
+        font-weight: bold;
     }
 `;
  

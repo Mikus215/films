@@ -1,9 +1,10 @@
 import React from 'react';
 import PopularMoviesHome from './pages/PopularMoviesHome';
-import GlobalStyle from './components/GlobalStyle'
-import { Switch, Route  } from 'react-router-dom';
-import Nav from './components/Nav';
 import PopularFilms from './pages/PopularFilms';
+import GlobalStyle from './components/GlobalStyle'
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import { Switch, Route  } from 'react-router-dom';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <PopularFilms path="/" exact />
         </Route>
       </Switch>
+      <Footer />
       </>
   );
 }

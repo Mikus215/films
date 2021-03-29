@@ -14,7 +14,7 @@ const Nav = () => {
                     </li>
                     <li>
                         <Link to="/popularfilms">
-                            Popular Films
+                            Popular Dramas
                         </Link>
                     </li>
                 </ul>
@@ -31,7 +31,7 @@ const StyledNav = styled.nav`
     z-index: 10;
     background-color: white;
     width: 100%;
-    height: 100%;
+    height: 6vh;
     padding: 1rem 0rem;
     box-shadow: 0px 0px 40px #e3e3e3;
 ul{

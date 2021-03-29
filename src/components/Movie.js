@@ -45,8 +45,8 @@ const Movie = ({movie}) => {
 const MovieBox = styled(motion.div)`
     position: relative;
     width: 500px;
-    margin: 0rem .3rem;
-    margin-top: 2rem;
+    margin: 0rem .6rem;
+    margin-top: 2.5rem;
     box-shadow: 0px 0px 10px rgba(0,0,0,.8);
     background-color: #e3e3e3;
     @media(max-width: 560px){
@@ -75,8 +75,8 @@ const Rating = styled(motion.p)`
 
 const Circle = styled(motion.div)`
     position: absolute;
-    right: 0rem;
-    top: 0rem;
+    right: -1rem;
+    top: -1.5rem;
     padding: .5rem;
     width: 45px;
     border-radius: 50%;

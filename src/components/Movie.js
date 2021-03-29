@@ -80,7 +80,7 @@ const Circle = styled(motion.div)`
     padding: .5rem;
     width: 45px;
     border-radius: 50%;
-    border: 3px solid lime;
+    border: 3px solid red;
     @media(max-width: 560px){
         right: -.5rem;
         top: -1.5rem;

@@ -32,8 +32,10 @@ const PopularFilms = () => {
 
     return (
       <>    
-      <Title>Best Dramas Current Year</Title>   
-        <input type="number" onChange={handleNewYear} value={userYear}/> <button onClick={handleYear}>Send</button>
+      <Title>Best Dramas Current Year</Title>
+      <Search>
+        <input type="number" onChange={handleNewYear} value={userYear} placeholder="Choose Year"/> <button onClick={handleYear}>Search</button>
+      </Search> 
 <Wrapper>
     <MoviesBoxes>
         {movies.map(movie => (
@@ -67,6 +69,19 @@ const Title = styled(motion.h1)`
   padding: 1rem 0rem;
   @media(max-width: 560px){
         font-size: 1.4rem;
+    }
+`;
+
+const Search = styled.div`
+    margin-left: 9%;
+    button{
+        background: none;
+        border: 2px solid black;
+        padding: .48rem;
+    }
+    input{
+        padding: .3rem;
+        font-size: 1.1rem;
     }
 `;
  
